@@ -18,12 +18,12 @@
   #include <Adafruit_MAX31865.h>
   #include <Wire.h>
   
-  #define WIFI_SSID "EDM-WIFI"
-  #define WIFI_PASSWORD "bsc.user"
-  #define INFLUXDB_URL "https://us-east-1-1.aws.cloud2.influxdata.com"
-  #define INFLUXDB_TOKEN "kYuqv5fS8JWIDVbwFrpeHyNedbrRFXHgqK9PHUdwUxplFuziwU-l3N97rzWXXeILYAH-eNDfD-NUiXKUHhACuw=="
-  #define INFLUXDB_ORG "3f157475a4fe0261"
-  #define INFLUXDB_BUCKET "test_bucket_1"
+  #define WIFI_SSID ""
+  #define WIFI_PASSWORD ""
+  #define INFLUXDB_URL ""
+  #define INFLUXDB_TOKEN ""
+  #define INFLUXDB_ORG ""
+  #define INFLUXDB_BUCKET ""
   #define thermopin 2
   #define RREF 430
   
