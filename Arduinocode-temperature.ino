@@ -87,9 +87,6 @@
   Serial.print("Writing: ");
   Serial.println(sensor.toLineProtocol());
 
-
-  Serial.println(client.pointToLineProtocol(sensor));
-
   if (!client.writePoint(sensor)) {
   Serial.print("InfluxDB write failed: ");
   Serial.println(client.getLastErrorMessage());
@@ -100,14 +97,8 @@
     Serial.println("Wifi connection lost");
   }
 
-  // Write point
-  if (!client.writePoint(sensor)) {
-    Serial.print("InfluxDB write failed: ");
-    Serial.println(client.getLastErrorMessage());
-  }
-
   //Wait 10s
-  Serial.println("Wait 10s");
+  Serial.println("Wait 2s");
   delay(2000);
 }
 
